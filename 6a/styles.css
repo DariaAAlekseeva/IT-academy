@@ -1,0 +1,101 @@
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* первая строка - таблица с границами между ячейками*/
+
+.table td:not(:last-child) {
+    border-right: red solid 2px; 
+}
+
+.table td {
+    padding: 0px 10px;
+}
+
+
+/* вторая строка - ссылки с изображениями между ними, 
+подсказку для вставки изображения нужного размера в псевдоэлемент нашла в интернете */
+
+.pseudoClassImg a:not(:last-child):after{
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    margin-left: 12px;
+    content: "";
+    background-image: url(border.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pseudoClassImg a {
+    margin: 10px;
+}
+
+/* третья строка - к ссылкам добавлен псевдоэлемент (символ вертикальная черта) */
+
+.listSymbol {
+    margin: 0px -40px; 
+    margin-top: -10px;
+}
+
+.listSymbol li {
+   display:inline;
+   margin-left: 10px;
+   
+}
+
+.listSymbol li:not(:last-of-type)::after{
+    content: "|";
+    font-weight: 300;
+    font-size: 22px;
+    color: red;
+    margin-left: 10px;
+    vertical-align:middle;
+    
+}
+
+
+/* четвертая строка - соединение идеи второй и третьей строки: список и добавдение 
+через псевдоэлемент изображения красной границы*/
+
+
+
+.listImg li{
+    display: inline;
+    margin: 5px;  
+}
+
+.listImg li:not(:last-of-type)::after{
+    content: "|";
+    font-weight: 300;
+    font-size: 22px;
+    color: red;
+    margin-left: 10px;
+    vertical-align:middle;
+}
+
+.listImg{
+    
+    margin: 0px -40px; 
+}
+
+
+/* пятая строка -  в html добавлены изображения, в css они приведены к нужному виду*/
+.LinksImg
+{
+display: inline;
+}
+
+
+.LinksImg img {
+width: 2px;
+height: 15px;
+vertical-align: bottom;
+margin: 0px 10px;
+}

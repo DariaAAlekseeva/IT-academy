@@ -1,0 +1,23 @@
+.stars { 
+    display: flex; 
+    flex-direction: row-reverse; 
+    justify-content: center;
+}
+/*идею использования флекс нашла в интернете и разобрала, без этого звездочки менялись в обратном порядке*/
+
+.stars span {
+    background: url(star0.png) no-repeat;
+    width: 80px;
+    height: 80px;  
+} 
+
+.stars span:hover~span, .stars span:hover {
+    content: "";
+    background: url(star1.png) no-repeat ;
+    width: 80px;
+    height: 80px;
+    
+    }
+
+
+
