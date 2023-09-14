@@ -3,15 +3,24 @@
     flex-direction: row-reverse; 
     justify-content: center;
 }
-/*идею использования флекс нашла в интернете и разобрала, без этого звездочки менялись в обратном порядке*/
+идею использования флекс нашла в интернете и разобрала,
+ без этого звездочки менялись в обратном порядке*/
+body {
+    text-align: center;
+    direction: rtl;
+}
+
+
 
 .stars span {
+    display: inline-block;
+    border: red solid 2px;
     background: url(star0.png) no-repeat;
     width: 80px;
     height: 80px;  
 } 
 
-.stars span:hover~span, .stars span:hover {
+.stars span:hover, .stars span:hover {
     content: "";
     background: url(star1.png) no-repeat ;
     width: 80px;
