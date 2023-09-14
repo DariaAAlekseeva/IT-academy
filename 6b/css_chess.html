@@ -15,26 +15,28 @@
       border: solid gray 1px;
     }
 
-    table tr:first-child td, table tr:last-child td{
+
+tr:nth-child(odd) td:nth-child(even){
+      background: black;
+
+  }
+
+tr:nth-child(even) td:nth-child(odd){
+      background: black;
+
+  }
+
+  .CHESS tr:first-child td, .CHESS tr:last-child td{
       background: greenyellow;
       height: 25px;
   }
 
-  table tr td:first-child, table tr td:last-child{
+  .CHESS tr td:first-child, .CHESS tr td:last-child{
       background: greenyellow;
       width: 25px;
   }
 
-  table tr:nth-child(odd) td:nth-child(even){
-      background: black;
-
-  }
-
-  table tr:nth-child(even) td:nth-child(odd){
-      background: black;
-
-  }
-
+/*
   table tr:nth-child(odd) td:nth-child(even):last-child, table tr:nth-child(even) td:nth-child(odd):first-child {
       background: greenyellow;
 
@@ -44,7 +46,7 @@
       background: greenyellow;
 
   }
-
+*/
 
 </style>
 

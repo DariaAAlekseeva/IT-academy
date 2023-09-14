@@ -5,28 +5,28 @@
 }
 идею использования флекс нашла в интернете и разобрала,
  без этого звездочки менялись в обратном порядке*/
-body {
-    text-align: center;
-    direction: rtl;
-}
 
+.stars span { 
+    display: block;
+    height: 80px;
+} 
 
-
-.stars span {
+.rating_star {
     display: inline-block;
-    border: red solid 2px;
     background: url(star0.png) no-repeat;
     width: 80px;
     height: 80px;  
-} 
+}
 
-.stars span:hover, .stars span:hover {
-    content: "";
+.stars:hover > .rating_star {
     background: url(star1.png) no-repeat ;
-    width: 80px;
-    height: 80px;
+   
     
-    }
+}
 
+.stars .rating_star:hover~.rating_star {     
+        background: url(star0.png) no-repeat;   
+        
+}
 
 
