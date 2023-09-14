@@ -4,36 +4,47 @@
 <style>
 
   table.CHESS
-  {
-    border-collapse: collapse;
-  }
+    {
+      border-collapse: collapse;
+    }
 
   table.CHESS td
-  {
-    width: 50px;
-    height: 50px;
-    border: solid gray 1px;
+    {
+      width: 50px;
+      height: 50px;
+      border: solid gray 1px;
+    }
+
+    table tr:first-child td, table tr:last-child td{
+      background: greenyellow;
+      height: 25px;
   }
 
-  table tr:first-child td, table tr:last-child td{
-    background: greenyellow !important;
-    height: 25px;
-}
+  table tr td:first-child, table tr td:last-child{
+      background: greenyellow;
+      width: 25px;
+  }
 
-table tr td:first-child, table tr td:last-child{
-    background: greenyellow !important;
-    width: 25px;
-}
+  table tr:nth-child(odd) td:nth-child(even){
+      background: black;
 
-table tr:nth-child(odd) td:nth-child(even){
-    background: black;
+  }
 
-}
+  table tr:nth-child(even) td:nth-child(odd){
+      background: black;
 
-table tr:nth-child(even) td:nth-child(odd){
-    background: black;
+  }
 
-}
+  table tr:nth-child(odd) td:nth-child(even):last-child, table tr:nth-child(even) td:nth-child(odd):first-child {
+      background: greenyellow;
+
+  }
+
+  table tr:nth-child(even):last-child td:nth-child(odd), table tr:nth-child(odd):first-child td:nth-child(even) {
+      background: greenyellow;
+
+  }
+
 
 </style>
 
