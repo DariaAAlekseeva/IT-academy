@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+        div{
+            margin: 5px 0px;
+        }
+        
+        p{
+            float: left;
+            margin: 0;
+            width:25%;
+        }
+
+        .line1 input{
+            display: block;
+            margin-left: 25%;
+            width: 73%;
+        }
+        
+        .line5 textarea{
+            width: 98%;  
+        }
+        
+
+        @media screen and (max-width:800px) {
+                p{
+                    display: block;
+                    width: 98%;
+                }           
+                .line1 input{
+                    margin-left: 0;
+                    width: 98%;
+                }
+                .publication_place_lable{
+                    display: block;
+                }
+                .line4 p { 
+                    width: max-content;
+                    float: left;
+                }
+                select{
+                    width: 99%;
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div> <br>
+        <div class="line1"> 
+            <p>Название статьи:</p>
+            <input type="text" name="title" class="title"> 
+        </div>
+        <div class="line2">
+            <p>Рубрика:</p>
+            <select class="select">
+                <option>программирование</option>
+                <option>история</option>
+                <option>литература</option>
+                <option>физика</option>
+            </select>
+        </div>
+        <div class="line3">
+            <p>Публикация</p>
+            <label class="publication_place_lable"><input type="radio" name="publication_place" class="publication_place">на сайте</label>
+            <label class="publication_place_lable"><input type="radio" name="publication_place" class="publication_place">в журнале</label> 
+            <label class="publication_place_lable"><input type="radio" name="publication_place" class="publication_place"> на сайте и в журнале</label>
+        </div>
+        <div class="line4">
+            <p>Разрешить комментарии:</p>
+            <input type="checkbox" name="commentOn" checked> 
+        </div>
+        <div class="line5">
+            <p>Текст статьи:</p>
+            <textarea name="text" id="text"></textarea>
+        </div>
+        <input type="submit" value="Опубликовать">
+    </form>
+    
+</body>
+</html>
