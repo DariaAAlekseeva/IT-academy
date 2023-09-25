@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
         form{
+           
             margin: 10px;
             font-family: Arial, Helvetica, sans-serif;  
         }
@@ -20,24 +21,28 @@
         }
 
         .line1 input{
+            box-sizing: border-box;
             display: block;
             margin-left: 25%;
-            width: 73%;
+            width: 75%;
         }
         
         .line5 textarea{
-            width: 98%;  
+            width: 100%;  
         }
-        
+         
+        *{
+            box-sizing: border-box;
+         }
 
         @media screen and (max-width:800px) {
                 p{
                     display: block;
-                    width: 98%;
+                    width: 100%;
                 }           
                 .line1 input{
                     margin-left: 0;
-                    width: 98%;
+                    width: 100%;
                 }
                 .publication_place_lable{
                     display: block;
@@ -47,7 +52,7 @@
                     float: left;
                 }
                 select{
-                    width: 99%;
+                    width: 100%;
                 }
         }
 
