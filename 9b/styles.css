@@ -1,0 +1,79 @@
+/*для домика*/
+
+#wall:hover{
+    fill: red;
+ }
+
+ #roof:hover{
+    fill: rgb(60, 104, 198);
+    stroke: rgb(56, 23, 149);
+    stroke-width: 10px;
+ }
+.roof_window ellipse:hover, .window rect:hover{
+    fill: blue;
+  
+ }
+
+#tube:hover{
+    transform: translateY(-20px);
+    fill: gold;
+  
+}
+
+#base:hover{
+    width: 220px;
+    transform: translateX(-10px);
+    fill: rgb(26, 115, 115);
+    stroke: black;
+    stroke-width: 5px;
+}
+
+
+/*для геометрических фигур*/
+
+#triangle1, #triangle2{
+    fill:blue;
+    stroke: blue;
+    stroke-width: 5px;
+}
+
+#square1, #square2{
+    fill:red;
+    stroke: red;
+    stroke-width: 5px;
+}  
+
+#circle1, #circle2 {
+    fill: green;
+    stroke: green;
+    stroke-width: 5px;
+
+}
+
+#triangle1, #square1, #circle1, #triangle2, #square2, #circle2{
+    fill-opacity: 0.75;
+}
+
+#triangle1:hover, #triangle2:hover{
+    fill:aqua;
+}
+#triangle2:hover{
+    stroke:aqua;
+}
+
+#square1:hover{
+    transform: scale(0.95); 
+}
+#square2:hover{
+   fill: yellow;
+   stroke-width: 20px;
+   fill-opacity: 1;
+}
+
+#circle2:hover{
+    fill-opacity: 1;
+}
+
+#circle1:hover{
+    fill-opacity: 0;
+}
