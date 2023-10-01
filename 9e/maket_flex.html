@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0px;
+    }
+    
+    .header{
+        display:flex;
+        justify-content: center;
+        background: rgb(155, 205, 225); 
+        text-align: center; 
+        color: darkblue; 
+        font-size: 2rem;    
+    }
+
+    .conteiner{
+        display:flex;
+        flex-direction: row;
+        background: url(football-icon.png) right top repeat-y;
+    }
+
+    .menu{
+        display:flex;
+        flex-direction: column;
+        flex: 0 0 200px;
+        background-color: rgb(236, 236, 156);
+        padding: 10px;
+    }
+
+    .info{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    h2{
+        text-align: center; 
+        font-size: 2rem; 
+        margin: 5px;
+    }
+
+    img{
+        float: left;
+        margin: 10px 10px 0px 0px; 
+        width: 300px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(155, 205, 225); 
+        color: darkblue; 
+        font-size: 2rem;     
+    }
+
+    @media screen and (max-width:800px){
+        .conteiner{
+            background: none;
+        } 
+    }
+
+    @media screen and (max-width:600px) {
+        .footer, .header{
+            display: none;
+        }
+
+        div, h3{
+            margin: 0px;
+        }
+        
+        .conteiner{
+            flex-direction: column-reverse;
+        }
+
+        .menu{
+            background-color: white;
+            margin-top: 0;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+        }
+        ul{ 
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-around;
+            height: auto;
+            
+        }
+    }
+
+    </style>
+</head>
+<body>
+    
+        <div class="header">
+            ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+        </div>
+        <div class="conteiner">
+            
+                <div class="menu">
+                    <h3>Виды спорта:</h3>
+                <ul>
+                    <li><a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт">Конькобежный спорт</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Биатлон">Биатлон</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Футбол">Футбол</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Стрельба_из_лука_(вид_спорта)">Стрельба из лука</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Прыжок_в_длину">Прыжок в длину</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Прыжок_в_высоту">Прыжок в высоту</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Фигурное_катание">Фигурное катание</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание">Синхронное плавание</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Шахматы">Шахматы</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Шашки">Шашки</a></li>
+                </ul>
+                </div>
+                <div class="info">
+                    <h2 > ФУТБОЛ </h2>
+                        <img src="football.png" >
+                        <p>Футбол - командный вид спорта, в котором целью является забить мяч 
+                        в ворота соперника ногами или другими частями тела (кроме рук) 
+                        большее количество раз, чем команда соперника. </p>
+                        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок 
+                        и руководящих принципов. Эти правила предназначены для 
+                        применения на всех уровнях футбола, хотя есть некоторые 
+                        изменения для таких групп, как юниоры, взрослые, женщины 
+                        и люди с ограниченными физическими возможностями. 
+                        Законы очень часто формулировались в общих чертах, которые
+                        позволяют упростить их применение в зависимости от характера игры.
+                        </p>
+                </div>
+            
+    </div>
+        <div class="footer"> ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+    
+</body>
+</html>

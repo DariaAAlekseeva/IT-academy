@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes Animation1{
+            from { background-color: rgb(217, 255, 0); }
+            50% {background-color: rgb(240, 99, 214);}
+            to { background-color: rgb(217, 255, 0); }
+        }
+         
+        @keyframes Animation2{
+            from { width: 20%;}
+            to {width: 100%;}
+        }
+
+        @keyframes Animation3 {
+            from {scale: 1;}
+            10%{scale: 1.2; }
+            to {scale: 1;}
+            
+        }
+
+        @keyframes Animation4
+            {
+                from { background: url('coin.png') 0px -160px; }
+                to { background: url('coin.png') -800px -160px; }
+            }
+
+        .ex1, .ex2, .ex3 {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .ex1{
+            color: black;
+            animation: Animation1 3s infinite;
+        }
+
+        .ex3{
+            width: 300px;
+            height: 20px;
+            background-color: brown;
+            overflow: hidden;
+            transition: height 1s;
+        }
+
+        .ex5{
+            background-color: rgb(67, 3, 97);
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .conteiner:hover .ex2  { 
+            background-color: aquamarine;
+            color: black;
+            animation: Animation2 5s 1;
+        }
+
+        .conteiner:hover .ex3{
+            height: 100px;
+        }
+
+        /* shape is from https://css-tricks.com/the-shapes-of-css/*/
+        #heart { 
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        .conteiner:hover #heart{
+            animation: Animation3 1s infinite;
+        }
+
+        .conteiner:hover .ex5 {
+                background-color: rgb(67, 3, 97);
+                width: 80px;
+                height: 80px;
+                animation: Animation4 2s steps(10) 3;
+                font-size: 0;
+        }
+
+
+        </style> 
+        
+</head>
+
+<body>
+    <div class="conteiner" style="margin: 20px; display: block;">
+        <p class='ex1'>Анимация</p>
+        <p class='ex2'>Другая анимация</p>
+        <p class='ex3'>Анимация со стихотворением <br>
+            «Ну дела, — подумал Лось, — <br>
+            Не хотелось. <br>
+            А пришлось». <br>
+        </p>
+        <div id="heart"></div>
+        <div class="ex5">Тут будет анимация с монеткой</div>
+    </div>
+      
+</body>
+</html>
