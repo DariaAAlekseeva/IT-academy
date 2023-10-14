@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+let countrysH = {};
+
+function addCountry (countryName, capitalName) {
+    countrysH[countryName] = capitalName;
+}
+
+console.log(countrysH);
+addCountry('Франция','Париж');
+addCountry('Польша','Варшава');
+addCountry('Беларусь','Минск');
+console.log(countrysH);
+
+function deleteCountry (countryName) {
+    delete countrysH[countryName];
+}
+
+deleteCountry('Беларусь');
+console.log(countrysH);
+
+function getCountryInfo(countryName) {
+  return countryName+ ' '+ countrysH[countryName];
+}
+
+getCountryInfo('Франция');
+console.log(countrysH);
+
+function allCountry() {
+    let countryS='';
+    for (let key in countrysH) {
+        countryS=countryS + getCountryInfo(key);
+    }
+return countryS;
+}
+
+console.log(allCountry());
+
+</script>
+<body>
+    
+</body>
+</html>
