@@ -1,125 +1,12 @@
-html{
-margin: 0;
-}
-
 .container {
-    width: 1000px;
+    width: 1720px;
     margin: 0 auto;
 }
-
-.hamburger-menu {
-    display: none;
-}
-
-#menu__toggle {
-    opacity: 0;
-}
-
-#menu__toggle:checked+.menu__btn>span {
-    transform: rotate(45deg);
-}
-
-#menu__toggle:checked+.menu__btn>span::before {
-    top: 0;
-    transform: rotate(0deg);
-    background-color: #DA6B62;
-}
-
-#menu__toggle:checked+.menu__btn>span::after {
-    top: 0;
-    transform: rotate(90deg);
-    background-color: #DA6B62;
-}
-
-#menu__toggle:checked~.menu__box {
-    right: 0 !important;
-}
-
-.menu__btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #DA6B62;
-    transition-duration: .25s;
-}
-
-.menu__btn>span::before {
-    content: '';
-    top: -8px;
-}
-
-.menu__btn>span::after {
-    content: '';
-    top: 8px;
-}
-
-.menu__box {
-    font-family: 'Roboto';
-    display: block;
-    position: fixed;
-    top: 0px;
-    right: -110%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding-top: 32px;
-    list-style: none;
-    background-color: #fff;
-    transition-duration: .25s;
-}
-
-
-.menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #aa9c9b;
-    font-size: 24px;
-    font-weight: 400;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-
-.menu_item_langs {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.menu_lang {
-    transform: rotate(90deg);
-    width: 50px;
-    align-self: flex-end;
-
-}
-
-.menu_lang:last-of-type {
-    color: #070707;
-    font-weight: 900;
-}
-
-.menu__item:hover {
-    color: #DA6B62;
-}
-
-
 
 .title {
     color: #141323;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -130,15 +17,15 @@ margin: 0;
 .redButton,
 .whiteButton {
     display: inline-block;
-    width: 210px;
-    height: 40px;
-    border-radius: 10px 0px;
+    width: 340px;
+    height: 72px;
+    border-radius: 20px 0px;
     text-decoration: none;
     text-align: center;
-    line-height: 40px;
+    line-height: 72px;
     margin: 0 auto;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
 
@@ -148,8 +35,9 @@ margin: 0;
     border: #DA6B62 solid 3px;
     background-color: #DA6B62;
     color: white;
-    margin-right: 50px;
+    margin-right: 55px;
 }
+
 
 .whiteButton {
     border: #DA6B62 solid 3px;
@@ -158,6 +46,7 @@ margin: 0;
 
 header {
     border-bottom: #DA6B62 solid 3px;
+
 }
 
 .header__nav {
@@ -176,12 +65,12 @@ header {
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    width: 700px;
+    width: 760px;
 }
 
 .header__menu-link {
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 40px;
     font-style: normal;
@@ -193,21 +82,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    padding: 50px 100px;
 }
 
-
-.mainInfo div {
-    width: 500px;
-}
 
 .mainInfo__title {
     color: #141323;
     font-family: Roboto;
-    font-size: 32px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 86px;
     text-transform: uppercase;
     margin: 40px 0px;
 }
@@ -215,24 +100,14 @@ header {
 .mainInfo__subtitle {
     color: #141323;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 58px;
 }
 
-.mainInfo__img-forWeb {
-    margin-top: 30px;
-    width: 400px;
-    height: 500px;
-}
-
-.mainInfo__img-forMobile {
-    display: none;
-}
-
 .mainInfo__buttons {
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 
 .forWhom__blocks {
@@ -242,9 +117,9 @@ header {
 
 .forWhom__blocks-item {
     display: inline-block;
-    width: 320px;
-    height: 180px;
-    border-radius: 30px 0px;
+    width: 560px;
+    height: 265px;
+    border-radius: 60px 0px;
     background: #E5F8F6;
 }
 
@@ -252,30 +127,30 @@ header {
     color: #141323;
     text-align: center;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin: 5px;
-    padding-bottom: 12px;
+    line-height: 48px;
+    margin: 10px;
+    padding-bottom: 24px;
 }
 
 .forWhom__blocks-item-list {
     color: #141323;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 30px;
 
 }
 
 .forWhom__blocks-item-list li {
-    padding-bottom: 3px;
+    padding-bottom: 6px;
 }
 
 .aboutCourse {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .aboutCourse__info {
@@ -286,36 +161,35 @@ header {
 
 .aboutCourse__info-list-item {
     display: block;
-    width: 250px;
-    height: 70px;
+    width: 415px;
+    height: 136px;
     border-radius: 20px 0px;
     border: 3px solid #DA6B62;
     background: #FFF;
     color: #141323;
-    font-size: 10 px;
     font-family: Roboto;
-    line-height: 60px;
+    line-height: 136px;
     text-align: left;
     margin: 0;
     margin-bottom: 30px;
 }
 
 .aboutCourse__info-list-item span {
-    font-size: 36px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin-right: 30px;
+    margin-left: 40px;
     vertical-align: middle;
 }
 
 .aboutCourse__info img {
-    height: 285px;
+    height: 474px;
 }
 
 .howClassesGoing {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -326,44 +200,30 @@ header {
 }
 
 .howClassesGoing img {
-    margin-left: 50px;
-    width: 400px;
+    margin-left: 165px;
 }
 
 .howClassesGoing__info-subtitle {
     color: #141323;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 48px;
 }
 
 .howClassesGoing .redButton {
-    margin: 50px;
-}
-
-
-.studentsWorks__images-imgHoriz {
-    width: 39%;
-    height: auto;
-    margin: 5px;
-}
-
-.studentsWorks__images-imgVert {
-    width: 19%;
-    height: auto;
-    margin: 5px;
+    margin: 100px;
 }
 
 .studentsWorks__images {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 40px;
 }
 
 .studentsWorks__button {
-    margin: 50px 0;
+    margin: 100px 0;
     text-align: center;
 }
 
@@ -371,39 +231,38 @@ header {
 .teachers__rows-item {
     display: flex;
     flex-direction: row;
-    justify-self: center;
-    width: 500px;
-    height: 280px;
+    width: 850px;
+    height: 507px;
     border: #FC8D84 solid 3px;
-    margin: 5px;
-    padding-left: 10px;
+    margin: 10px;
+    padding-left: 40px;
 }
+
 
 .teachers__rows {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
 }
 
 .teachers__rows-item div {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
+    margin-left: 20px;
     align-self: center;
-    height: 240px;
+    height: 405px;
 }
 
 .teachers__rows-item img {
-    width: 170px;
-    height: 240px;
+    width: 270px;
+    height: 405px;
     align-self: center;
-    margin-left: 5px;
 }
 
 .teachers__rows-item-name {
     color: #141323;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -413,40 +272,40 @@ header {
 .teachers__rows-item-exp {
     color: #141323;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin: 5px 0px;
+    line-height: 40px;
+    margin: 10px 0px;
 }
 
 .teachers__rows-item-speciality {
     color: #141323;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 48px;
     margin: 0;
 }
 
 .teachers__rows-item-speciality-value {
     color: #DA6B62;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    margin: 5px 0;
+    line-height: 48px;
+    margin: 0;
 }
 
 .teachers__rows-item-info {
     color: #141323;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 36px;
     margin: 0;
 }
 
@@ -454,7 +313,7 @@ header {
 .teachers__rows-item-link {
     color: #DA6B62;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -464,7 +323,7 @@ header {
 }
 
 .employmentProgram {
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .employmentProgram__blocks {
@@ -477,15 +336,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .employmentProgram__blocks-item {
-    width: 300px;
-    height: 150px;
-    border-radius: 30px 0px;
+    width: 560px;
+    height: 230px;
+    border-radius: 60px 0px;
     background: #FFDCD9;
-    padding: 10px;
 
 }
 
@@ -493,58 +351,56 @@ header {
     color: #141323;
     text-align: center;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 48px;
     margin: 5px;
-
 }
 
 .employmentProgram__blocks-item-list {
     color: #141323;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 30px;
 }
 
 .cooperation {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .cooperation img {
-    width: 100%
+    height: 90px;
 }
 
 .reviews__cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
 .reviews__cards-item {
     display: flex;
     flex-direction: column;
-    width: 235px;
-    height: 400px;
+    width: 400px;
+    height: 650px;
     justify-content: flex-end;
     background: url(img/dots.png) no-repeat bottom;
 }
 
 .reviews__cards-item img {
-    width: 150px;
+    width: 240px;
     align-self: center;
-    margin-bottom: 30px;
 }
 
 .reviews__cards-item-text {
     background-color: #ffffff;
-    width: 220px;
-    height: 200px;
+    width: 367px;
+    height: 324px;
     align-self: center;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
@@ -552,27 +408,27 @@ header {
     color: #141323;
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 30px;
 }
 
 .reviews__cards-item-text-subtitle {
     color: #141323;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin: 14px;
+    line-height: 30px;
+    margin: 10px;
 }
 
 .consult {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 50px 100px;
 }
 
 .consult div {
@@ -582,38 +438,34 @@ header {
 .consult__title {
     color: #141323;
     font-family: Roboto;
-    font-size: 48px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 86px;
     text-transform: uppercase;
-    margin: 10px 0px;
+    margin: 40px 0px;
 }
 
 .consult__subtitle {
     color: #141323;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
-    margin: 40px 0 65px 0;
-}
-
-.consult img {
-    width: 400px;
+    line-height: 58px;
+    margin: 70px 0 86px 0;
 }
 
 footer {
     border-top: #DA6B62 solid 3px;
-    height: 200px;
+    height: 300px;
 }
 
 footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .footer__column {
@@ -621,36 +473,32 @@ footer div {
     flex-direction: column;
     align-self: start;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
 }
 
 footer a,
 footer p {
     color: #141323;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 40px;
     text-decoration: none;
 }
 
 .footer__column-contactsIcons {
-    width: 100px;
+    width: 150px;
     flex-wrap: wrap;
     display: flex;
     margin: 0;
 }
 
-footer img {
-    width: 30px;
-}
-
 .footer__column p {
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .footer__column:last-of-type {
-    height: 60px;
+    height: 95px;
 }

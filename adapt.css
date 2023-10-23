@@ -1,0 +1,424 @@
+@media screen and (max-width:1000px) {
+
+    .hamburger-menu {
+        display: block;
+    }
+
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        line-height: normal;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .redButton,
+    .whiteButton {
+        display: block;
+        width: 210px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+    .header__nav img {
+        height: 40px;
+        margin: 10px;
+        align-self: center;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .mainInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mainInfo div {
+        width: 350px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .mainInfo__title {
+        font-size: 20px;
+        line-height: 40px;
+        margin: 20px 0px;
+    }
+
+    .mainInfo__subtitle {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .mainInfo__img-forMobile {
+        display: block;
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+    .mainInfo__img-forWeb {
+        display: none;
+    }
+
+    .mainInfo__buttons {
+        margin: 0;
+        padding: 0;
+    }
+
+    .forWhom {
+        padding-top: 20px;
+    }
+
+    .forWhom__blocks {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .forWhom__blocks-item {
+        flex-direction: column;
+        width: 300px;
+        height: 120px;
+        margin: 10px auto;
+        border-radius: 30px 0px;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .forWhom__blocks-item-title {
+        font-size: 18px;
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+
+    .forWhom__blocks-item-list {
+        color: #141323;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .forWhom__blocks-item-list li {
+        padding-bottom: 3px;
+    }
+
+    .aboutCourse {
+        padding-top: 20px;
+    }
+
+    .aboutCourse__info {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .aboutCourse__info-list-item {
+        display: block;
+        width: 250px;
+        height: 50px;
+        border-radius: 15px 0px;
+        font-size: 12px;
+        line-height: 50px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .aboutCourse__info-list-item span {
+        font-size: 28px;
+        margin-right: 10px;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+
+    .aboutCourse__info img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    .howClassesGoing {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .howClassesGoing__info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .howClassesGoing img {
+        margin: 0px auto;
+        width: 250px;
+    }
+
+    .howClassesGoing__info-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .howClassesGoing .redButton {
+        margin: 20px auto;
+    }
+
+    .studentsWorks {
+        padding-top: 10px;
+    }
+
+    .studentsWorks__images-imgHoriz {
+        margin: 2px;
+    }
+
+    .studentsWorks__images-imgVert {
+        margin: 2px;
+    }
+
+    .studentsWorks__button {
+        margin: 20px 0;
+
+    }
+
+    .teachers {
+        padding-top: 20px;
+    }
+
+    .teachers__rows-item {
+        width: 330px;
+        height: 240px;
+        margin: 5px auto;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .teachers__rows {
+        flex-direction: column;
+    }
+
+    .teachers__rows-item div {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        height: 210px;
+    }
+
+    .teachers__rows-item img {
+        width: 150px;
+        height: 210px;
+        align-self: center;
+        margin-left: 10px;
+    }
+
+    .teachers__rows-item-name {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .teachers__rows-item-exp {
+        font-size: 10px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .teachers__rows-item-speciality {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .teachers__rows-item-speciality-value {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .teachers__rows-item-info {
+        font-size: 12px;
+        line-height: normal;
+        margin: 0;
+    }
+
+
+    .teachers__rows-item-link {
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .employmentProgram {
+        margin: 40px auto;
+    }
+
+    .employmentProgram__blocks {
+        flex-direction: column;
+
+    }
+
+    .employmentProgram__blocks-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .employmentProgram__blocks-item {
+        width: 300px;
+        height: 140px;
+        padding: 10px;
+        margin: 10px auto;
+
+    }
+
+    .employmentProgram__blocks-item-title {
+        font-size: 18px;
+        margin: 5px;
+
+    }
+
+    .employmentProgram__blocks-item-list {
+        font-size: 14px;
+    }
+
+    .cooperation {
+
+        margin-bottom: 50px;
+    }
+
+    .cooperation img {
+        display: none;
+
+    }
+
+    .reviews__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .reviews__cards-item {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        width: 235px;
+        height: 350px;
+        margin: 50px auto;
+        justify-content: flex-end;
+        background: url(img/dots.png) no-repeat bottom;
+    }
+
+    .reviews__cards-item img {
+        width: 120px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .reviews__cards-item-text {
+        background-color: #ffffff;
+        width: 220px;
+        height: 220px;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .reviews__cards-item-text-title {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .reviews__cards-item-text-subtitle {
+        font-size: 14px;
+        line-height: normal;
+
+    }
+
+    .consult {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .consult div {
+        text-align: center;
+    }
+
+    .consult__title {
+        font-size: 20px;
+        line-height: normal;
+        margin: 5px 0px;
+    }
+
+    .consult__subtitle {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 20px 0 20px 0;
+    }
+
+    .consult img {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer__column {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        margin-left: 10px;
+        align-items: flex-start;
+    }
+
+    footer a,
+    footer p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer__column-contactsIcons {
+        flex-direction: row;
+        width: 200px;
+        margin-bottom: 20px
+    }
+
+    footer img {
+        display: inline-block;
+        width: 30px;
+        margin: 0px;
+    }
+
+    .footer__column p {
+        margin: 0px;
+        padding-bottom: 5px;
+    }
+
+    .footer__logo {
+        margin: 10px;
+    }
+
+    .footer__column:last-of-type {
+        height: auto;
+    }
+}

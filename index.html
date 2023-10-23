@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="adapt.css">
+
     
 </head>
 <body>
@@ -23,9 +25,23 @@
             </ul>
         </nav>
     </header>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+        <span></span>
+        </label>
+        <ul class="menu__box">
+        <li><a class="menu__item" href="#">Главная</a></li>
+        <li><a class="menu__item" href="#">О центре</a></li>
+        <li><a class="menu__item" href="#">Новости</a></li>
+        <li><a class="menu__item" href="#">Все курсы</a></li>
+        <li><a class="menu__item" href="#">Контакты</a></li>  
+        </ul>
+    </div>
     <section class="mainInfo container">
         <div>
             <p class="mainInfo__title">ПРОФЕССИОНАЛЬНЫЙ КУРС ПО <br> ВЕБ И МОБИЛЬНОМУ ДИЗАЙНУ</p>
+            <img class="mainInfo__img-forMobile" src="img/mainInfo_img.png" alt="фото девушки с ноутбуком">
             <p class="mainInfo__subtitle">
                 3 месяца (25 занятий по 3 часа среда/суббота) <br>
                 Помощь в трудоустройстве/стажировка <br>
@@ -35,7 +51,7 @@
                 <a class="whiteButton" href="#">Программа курса</a>
             </div>
         </div>
-        <img src="img/mainInfo_img.png" alt="фото девушки с ноутбуком">
+        <img class="mainInfo__img-forWeb" src="img/mainInfo_img.png" alt="фото девушки с ноутбуком">
     </section>
     <section class="forWhom container">
        <p class="title">Для кого подойдет этот курс</p>
@@ -93,14 +109,14 @@
     <section class="studentsWorks container">
         <p class="title">Работы выпускников</p>
         <div class="studentsWorks__images">
-            <img src="img/studentsworks/image 13.png" alt="">
-            <img src="img/studentsworks/image 16.png" alt="">
-            <img src="img/studentsworks/3.png" alt="">
+            <img class="studentsWorks__images-imgHoriz" src="img/studentsworks/image 13.png" alt="">
+            <img class="studentsWorks__images-imgHoriz" src="img/studentsworks/image 16.png" alt="">
+            <img class="studentsWorks__images-imgVert" src="img/studentsworks/3.png" alt="">
         </div>
         <div class="studentsWorks__images">
-            <img src="img/studentsworks/4.png" alt="">
-            <img src="img/studentsworks/image 15.png" alt="">
-            <img src="img/studentsworks/image 14.png" alt="">
+            <img class="studentsWorks__images-imgVert" src="img/studentsworks/4.png" alt="">
+            <img class="studentsWorks__images-imgHoriz" src="img/studentsworks/image 15.png" alt="">
+            <img class="studentsWorks__images-imgHoriz" src="img/studentsworks/image 14.png" alt="">
         </div>
         <div class="studentsWorks__button">
             <a class="redButton" href="#">Получить консультацию</a>
@@ -118,9 +134,9 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: Продуктовый дизайн. <br>
-                        Проектирование сложных интерфейсов. <br>
-                        Пользовательские исследования и <br>
+                        Сфера интересов: Продуктовый дизайн. 
+                        Проектирование сложных интерфейсов. 
+                        Пользовательские исследования и 
                         аналитика
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -135,8 +151,8 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: Дизайн интерфейсов, <br>
-                        юзабилити, иллюстрации, анимация, <br>
+                        Сфера интересов: Дизайн интерфейсов, 
+                        юзабилити, иллюстрации, анимация, 
                         каллиграфия и леттеринг
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -153,9 +169,9 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: UI-дизайн (мобильный <br>
-                        дизайн, веб-дизайн, дизайн десктоп- <br>
-                        приложений), UX-исследования, Front-end <br>
+                        Сфера интересов: UI-дизайн (мобильный 
+                        дизайн, веб-дизайн, дизайн десктоп- 
+                        приложений), UX-исследования, Front-end 
                          разработка
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -169,9 +185,9 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: UX/UI design, веб- <br>
-                        дизайн, анимация, айдентика, <br>
-                        продуктовый дизайн, полиграфия, дизайн- <br>
+                        Сфера интересов: UX/UI design, веб- 
+                        дизайн, анимация, айдентика, 
+                        продуктовый дизайн, полиграфия, дизайн- 
                         системы, продуктовая аналитика
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -187,8 +203,8 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: UX дизайн, UI архитектура, <br>
-                        графический дизайн, моушн дизайн, <br>
+                        Сфера интересов: UX дизайн, UI архитектура, 
+                        графический дизайн, моушн дизайн, 
                         маркетинг, бизнес аналитика
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -202,9 +218,9 @@
                     <p class="teachers__rows-item-speciality">Специальность:</p>
                     <p class="teachers__rows-item-speciality-value">UX/UI и веб-дизайн</p>
                     <p class="teachers__rows-item-info">
-                        Сфера интересов: UX/UI дизайн, <br>
-                        графический дизайн, проектирование <br>
-                        пользовательских интерфейсов, <br>
+                        Сфера интересов: UX/UI дизайн, 
+                        графический дизайн, проектирование 
+                        пользовательских интерфейсов, 
                         анимация
                     </p>
                     <a class="teachers__rows-item-link" href="#">Узнать больше</a>
@@ -218,7 +234,7 @@
             <div class="employmentProgram__blocks-row">
                 <div class="employmentProgram__blocks-item">
                     <p class="employmentProgram__blocks-item-title">
-                        Оказываем помощь в <br>
+                        Оказываем помощь в
                         составлении резюме
                         </p>
                     <ul class="employmentProgram__blocks-item-list">
@@ -228,12 +244,12 @@
                 </div>
                 <div class="employmentProgram__blocks-item">
                     <p class="employmentProgram__blocks-item-title">
-                        Помогаем составить профиль <br>
+                        Помогаем составить профиль 
                         на LinkdIn
                     </p>
                     <ul class="employmentProgram__blocks-item-list">
                         <li>Получите инструкцию по заполнению профиля</li>
-                        <li>Узнайте, как использовать данную сеть <br> для поиска работы</li>
+                        <li>Узнайте, как использовать данную сеть для поиска работы</li>
                     </ul>
                 </div>
                 <div class="employmentProgram__blocks-item">
@@ -241,7 +257,7 @@
                     Рекомендуем компании
                     </p>
                     <ul class="employmentProgram__blocks-item-list">
-                        <li>Будете рекомендованы на открытые позиции <br> junior-специалистов</li>
+                        <li>Будете рекомендованы на открытые позиции junior-специалистов</li>
                     </ul>
                 </div>
             </div>
@@ -257,18 +273,18 @@
                 </div>
                 <div class="employmentProgram__blocks-item">
                     <p class="employmentProgram__blocks-item-title">
-                    Главное требование для участия <br> в программе
+                    Главное требование для участия в программе
                     </p>
                     <ul class="employmentProgram__blocks-item-list">
-                        <li>Успешно пройти обучение по выбранной <br> программе с оценкой не ниже 7 баллов </li>
+                        <li>Успешно пройти обучение по выбранной программе с оценкой не ниже 7 баллов </li>
                     </ul>
                 </div>
                 <div class="employmentProgram__blocks-item">
                     <p class="employmentProgram__blocks-item-title">
-                    Возможность участия в <br> IT Bootcamp
+                    Возможность участия в IT Bootcamp
                     </p>
                     <ul class="employmentProgram__blocks-item-list">
-                        <li>Сможете пройти весь цикл создания<br> продукта и поработать в команде </li>
+                        <li>Сможете пройти весь цикл создания продукта и поработать в команде </li>
                     </ul>
                 </div>
             </div>
@@ -299,7 +315,7 @@
                 <img src="img/reviews/Ellipse 45.svg" alt="">
                 <div class="reviews__cards-item-text">
                     <p class="reviews__cards-item-text-title">Алексей Лебедев</p>
-                    <p class="reviews__cards-item-text-subtitle">Курс помог мне переквалифицироваться из веб-разработчика в UI/UX дизайнера. Я получил много полезной информации и практического опыта. Преподаватели были внимательны и отзывчивы. Я ...</p>
+                    <p class="reviews__cards-item-text-subtitle">Курс помог мне переквалифицироваться из веб-разработчика в UI/UX дизайнера. Я получил много полезной информации и практического опыта. Преподаватели были внимательны...</p>
                 </div>
             </div>
             <div class="reviews__cards-item">
@@ -311,19 +327,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <section class="consult container">
         <div>
@@ -337,7 +340,7 @@
     </section>
     <footer>
         <div class="container">
-            <img src="/img/logo_header.svg" alt="">
+            <img class="footer__logo" src="/img/logo_header.svg" alt="">
             <div class="footer__column">
                 <a href="#">Главная</a>
                 <a href="#">О центре</a>
