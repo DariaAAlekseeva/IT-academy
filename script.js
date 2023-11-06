@@ -25,7 +25,7 @@ function multyply() {
     for (i = 0; i < array.length; i++) {
         res *= array[i];
     }
-    outputResult(res);
+    document.getElementById('result').innerHTML = res;
 }
 
 function divide() {
@@ -34,17 +34,17 @@ function divide() {
     for (i = 1; i < array.length; i++) {
         res /= array[i];
     }
-    outputResult(res);
+    document.getElementById('result').innerHTML = res;
 }
 
 
 function plus() {
-    let array = parseValue();
+    
     let res = 0;
     for (i = 0; i < array.length; i++) {
         res += array[i];
     }
-    outputResult(res);
+    document.getElementById('result').innerHTML = res;
 }
 
 
@@ -54,7 +54,7 @@ function minus() {
     for (i = 1; i < array.length; i++) {
         res -= array[i];
     }
-    outputResult(res);
+    document.getElementById('result').innerHTML = res;
 }
 
 function addInput() {
@@ -86,15 +86,17 @@ function deleteInput() {
     }
 }
 
-function outputResult(res) {
-    switch (isNaN(res) || res) {
-        case Infinity:
-            document.getElementById('result').innerHTML = 'You cant divide by zero';
-            break;
-        case true:
-            document.getElementById('result').innerHTML = 'Incorrect value';
-            break;
-        default:
-            document.getElementById('result').innerHTML = res;
-    }
+function calculate(action) {
+    let array = parseValue();
+    let isValueNan=validate(array);
+    if
+}
+
+function validate(array){
+   
+    for (let i=0; i<array.length; i++){
+        if (isNaN(array[i])) {
+            
+        }
+    } 
 }
