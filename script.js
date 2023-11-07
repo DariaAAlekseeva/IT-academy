@@ -76,7 +76,7 @@ function calculate(operation) {
     } else {
         showErrors(valiadateResult.validateResultArray);
         document.getElementById('result').innerHTML = 'Invalid input value(s)'
-    }    
+    }
 }
 
 function validate(array) {
@@ -112,7 +112,7 @@ function showErrors(array) {
             }
         }
     } else {
-        for (let i = 0; i<elem.length; i++) {
+        for (let i = 0; i < elem.length; i++) {
             elem[i].style.background = 'white';
         }
     }
