@@ -25,7 +25,7 @@
 }
 
 #addInput {
-    background-color: rgb(227, 188, 114);
+    background-color: #b9c97c;
     border-radius: 10px;
     height: 35px;
     font-family: 'Courier New', Courier, monospace;
@@ -33,9 +33,10 @@
 }
 
 #deleteButton {
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(221, 221, 221);
     height: 35px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
+

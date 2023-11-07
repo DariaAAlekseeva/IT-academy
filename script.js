@@ -14,47 +14,29 @@ function parseValue() {
     let array = [];
     let valuesArray = getInputValues();
     for (i = 0; i < valuesArray.length; i++) {
-        array.push(parseFloat(valuesArray[i]));
+        if (valuesArray[i] == '') {
+            array.push(NaN);
+        } else {
+            array.push(Number(valuesArray[i]));
+        }
     }
     return array;
 }
 
 function multyply() {
-    let array = parseValue();
-    let res = 1;
-    for (i = 0; i < array.length; i++) {
-        res *= array[i];
-    }
-    document.getElementById('result').innerHTML = res;
+    calculate('*');
 }
 
 function divide() {
-    let array = parseValue();
-    let res = array[0];
-    for (i = 1; i < array.length; i++) {
-        res /= array[i];
-    }
-    document.getElementById('result').innerHTML = res;
+    calculate('/');
 }
-
 
 function plus() {
-    
-    let res = 0;
-    for (i = 0; i < array.length; i++) {
-        res += array[i];
-    }
-    document.getElementById('result').innerHTML = res;
+    calculate('+');
 }
 
-
 function minus() {
-    let array = parseValue();
-    let res = array[0];
-    for (i = 1; i < array.length; i++) {
-        res -= array[i];
-    }
-    document.getElementById('result').innerHTML = res;
+    calculate('-');
 }
 
 function addInput() {
@@ -67,7 +49,6 @@ function addInput() {
     } else {
         deleteButton.disabled = true;
     }
-
     divInput.append(`${elements.length + 1}.`, newInput);
     container.append(divInput);
 }
@@ -86,17 +67,54 @@ function deleteInput() {
     }
 }
 
-function calculate(action) {
+function calculate(operation) {
+    showErrors();
     let array = parseValue();
-    let isValueNan=validate(array);
-    if
+    let valiadateResult = validate(array);
+    if (valiadateResult.validateFlag) {
+        document.getElementById('result').innerHTML = doCalculate(array, operation);
+    } else {
+        showErrors(valiadateResult.validateResultArray);
+        document.getElementById('result').innerHTML = 'Invalid input value(s)'
+    }    
 }
 
-function validate(array){
-   
-    for (let i=0; i<array.length; i++){
+function validate(array) {
+    let validateResult = {
+        validateResultArray: [],
+        validateFlag: true
+    }
+    for (let i = 0; i < array.length; i++) {
         if (isNaN(array[i])) {
-            
+            validateResult.validateFlag = false;
+            validateResult.validateResultArray.push(false);
+        } else {
+            validateResult.validateResultArray.push(true);
         }
-    } 
+    }
+    return validateResult;
+}
+
+function doCalculate(array, operation) {
+    let result = array[0];
+    for (let i = 1; i < array.length; i++) {
+        result = eval(result + operation + array[i]);
+    }
+    return result;
+}
+
+function showErrors(array) {
+    let elem = document.querySelectorAll('#input_container div input');
+    if (array !== undefined) {
+        for (let i = 0; i < array.length; i++) {
+            if (!array[i]) {
+                elem[i].style.background = '#ff9595';
+            }
+        }
+    } else {
+        for (let i = 0; i<elem.length; i++) {
+            elem[i].style.background = 'white';
+        }
+    }
+    return;
 }
